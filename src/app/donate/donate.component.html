@@ -1,0 +1,17 @@
+<div style="padding: 13px;">
+
+  <form>
+    <label for="amount">Amount: </label>
+    <input type="number" id="amount" class="sum" (keyup)="eventHandler($event)"><br><br>
+    <label for="details">Details: </label>
+    <input type="text" id="details" (keyup)="detailsHandler($event)"><br><br>
+    <label for="email">Email Address: </label>
+    <input type="text" id="email" (keyup)="emailHandler($event)"><br><br>
+<!--    <input type="submit" value="Submit" (click)="submit()">-->
+  </form>
+
+  <button (click)="submit()">Submit</button>
+
+
+  <p>donate works!</p>
+</div>

@@ -1,0 +1,19 @@
+<div style="padding: 13px;">
+<form>
+  <label for="age">Age: </label>
+  <input type="number" id="age" (keyup)="ageHandling($event)"><br><br>
+  <label for="sex">Sex: </label>
+  <input type="text" id="sex" (keyup)="sexHandling($event)"><br><br>
+  <label for="race">Race: </label>
+  <input type="text" id="race" (keyup)="raceHandling($event)"><br><br>
+  <label for="details">Details: </label>
+  <input type="text" id="details" (keyup)="detailsHandling($event)"><br><br>
+  <label for="photo">Photo (link): </label>
+  <input type="text" id="photo" (keyup)="photoHandling($event)"><br><br>
+  <input type="submit" value="Submit" (click)="addAnimal()">
+</form>
+
+</div>
+
+<p>add-animal works!</p>
+

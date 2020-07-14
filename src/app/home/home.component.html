@@ -1,0 +1,27 @@
+<div style="padding: 13px;">
+  <mat-spinner *ngIf="animals.length === 0">List is Empty</mat-spinner>
+
+  <mat-card *ngFor="let animal of animals" style="margin-top:10px;">
+    <mat-card-header>
+      <mat-card-title>{{animal.race}}</mat-card-title>
+      <mat-card-subtitle>age: {{animal.age}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        id: {{animal.id}}
+      </p>
+      <p>
+        details: {{animal.details}}
+      </p>
+      <p>
+        sex: {{animal.sex}}
+      </p>
+      <img style="height:25%; width: 25%;" src="{{ animal.photo }}" />
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="onAdopt(animal.id)">Adopt</button>
+      <button color="red" mat-button (click)="deleteAnimal(animal.id)">DELETE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
